@@ -22,3 +22,11 @@ To run this project locally using **VS Code**:
 1. Clone the repository to your local machine:
    ```bash
    git clone <repository-url>
+
+## Demo Video
+
+Watch the demo video of the project below:
+
+![Video Demo](terminal.webm)
+
+[Click here to watch the video](./terminal.webm)
