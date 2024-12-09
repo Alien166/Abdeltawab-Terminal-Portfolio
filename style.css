@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Inconsolata:wght@200;400;600&display=swap');
+
+* {
+    font-family: "DM Mono", monospace;
+    margin: 0px;
+}
+
+body {
+    position: relative;
+	/* background: linear-gradient(-45deg, red, yellow, rgb(0, 255, 0), cyan, blue, purple, red); */
+	background: #2b2b2b;
+	background-size: 700% 700%;
+	/* animation: gradient 15s ease infinite; */
+	height: calc(100vh - 10px);
+    padding: 0px;
+    overflow: none;
+    overflow-y: hidden;
+    transition: all .35s ease-in;
+}
+
+.Terminal {
+    --padding: 50px;
+    --margin: 0;
+    padding: var(--padding);
+    margin: var(--margin);
+    height: calc(100vh - calc(calc(var(--padding) + var(--margin)) * 2));
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    overflow-x: hidden;
+    transition: all .35s ease-in;
+    margin-top: 0;
+}
+.ResumeTab {
+    --padding: 50px;
+    --margin: 0;
+    padding: var(--padding);
+    margin: var(--margin);
+    height: calc(100vh - calc(calc(var(--padding) + var(--margin)) * 2));
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    overflow-x: hidden;
+    transition: all .35s ease-in;
+    margin-top: 0;
+}
+
+input {
+    background: none;
+    color: white;
+    border: none;
+    width: calc(100vw - 700px);
+    font-size: inherit;
+    margin-top: 5px;
+    transform: translateX(-10px);
+}
+
+
+
+
+
+
+input:focus {
+    outline: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.Under {
+    background-color: rgb(240, 173, 78); /* Orange */
+}
+.Maximize {
+    background-color: rgb(76, 175, 80); /* Green */
+}
+
+.x {
+    background-color: rgb(217, 83, 79); /* Red */
+}
+.Under:hover {
+    background-color: rgb(240, 173, 78, 0.7);
+}
+.Maximize:hover {
+    background-color: rgb(76, 175, 80, 0.7);
+}
+
+.x:hover {
+    background-color: rgb(217, 83, 79, 0.7);
+}
+
+.hidden{
+    .UnderR{
+        background-color: rgb(76, 175, 80); /* Green */
+    }
+}
+
+
+.Buttons * {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+
+}
+.Buttons>button{
+    height: 3px;
+    width: 3px;
+}
+.Buttons *:after {
+    content: none;
+}
+.Buttons{
+    height: 40px;
+}
+
+.Buttons *:active {
+    background: #2f2f2f;
+}
+
+.Buttons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all .35s ease-in;
+}
+
+.hidden {
+    margin-top: calc(100vh - 80px);
+}
+
+
+.hidden > .Buttons {
+    top: calc(100vh - 60px);
+}
+div a{
+    color: rgb(0, 255, 0);
+
+}
+div span{
+    color: rgb(255, 0, 0);
+
+}
+.name{
+    color: rgb(230, 0, 255);
+    font-size: 2rem;
+}
+.project{
+    color: rgb(0, 255, 0);
+}
+.projectdes{
+    color: white;
+}
+div p a:after {
+    display: block;
+    content: "";
+    /* background: linear-gradient(90deg, #000, #f00 20%, #00f); */
+    background: transparent;
+    width: 100%;
+    height: 2px;
+}
+
+form {
+    width: min-content;
+    margin-top: -22px;
+    margin-left: 20px;
+}
+
+
+
+
+
+.username{
+    color: rgb(191, 0, 255);
+}
+
+.file-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .file-list th, .file-list td {
+    padding: 8px 12px;
+  }
+  
+  .file-list tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  
+
+.work-heading{
+    color:  rgb(191, 0, 255);
+}
+
+
+.Terminal::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.Terminal::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+}
+
+.Terminal::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.Terminal::-webkit-scrollbar-thumb:active {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.Terminal::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+}
+ 
+
+
+.app{
+    display: initial;
+    margin-left: 32px;
+    margin-top: 32px;
+    height: 75px;
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.app2{
+    display: initial;
+    margin-left: 32px;
+    margin-top: 162px;
+    height: 75px;
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.app3{
+    display: initial;
+    margin-left: 32px;
+    margin-top: 282px;
+    height: 75px;
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.Terminal{
+    padding: 40px;
+}
+.ResumeTab{
+    padding: 40px;
+}
+
+img {
+    height: 50px; /* Adjust the width as needed */
+    width: auto;
+    margin-right: 5px; /* Add spacing between the image and text */
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: normal;    /* Center items horizontally */
+    justify-content: baseline; /* Center items vertically */
+    height: 100vh;          /* Adjust this to control the container height */
+    gap: 20px;              /* Add spacing between buttons */
+}
+
+.app,
+.app2,
+.app3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust this to control the spacing between image and text */
+}
+.app span,
+.app2 span,
+.app3 span {
+    color: white;
+}
+
+.term,
+.port,
+.resu{
+    display: block;
+    z-index: -10;
+}
+
+
+
+.app img {
+    width: 75px;
+    height: 75px;
+    margin-right: 5px; 
+}
+.app2 img {
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    margin-right: 5px; 
+}
+.app3 img {
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    margin-right: 5px; 
+}
+
+.maxed{
+    margin: 0;
+    width: 96%;
+    height: 93%;
+    transition: all .35s ease-in;
+transform: translate(0, 0);
+left: 0;
+right: 0;
+
+}
+
+.app{
+    z-index: 1;
+}
+.app2{
+    z-index: 1;
+}
+.Terminal{
+    z-index: 2;
+    position: absolute;
+}
+.ResumeTab{
+    z-index: 20;
+    position: absolute;
+}
+.Buttons{
+    z-index: 3;
+}
+::-webkit-scrollbar {
+    display: none;.titlebar {
+        text-align: center;
+        margin: 0 auto; /* Center the titlebar */
+    }
+    display: none;.titlebarResumeTab {
+        text-align: center;
+        margin: 0 auto; /* Center the titlebar */
+    }
+  }
+
+
+  #mydiv {
+    position: absolute;
+    z-index: 9;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    z-index: 10;
+
+  }
+  .Terminal {
+    background: rgba(17, 17, 17, 0.7); /* Add transparency */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+  .ResumeTab {
+    background: rgba(17, 17, 17, 0.7); /* Add transparency */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.titlebar {
+    cursor: grab;
+    z-index: 1001;
+}
+.ButtonsResumeTab {
+    z-index: 1002;
+}
+.image-container{
+    opacity: 1;
+    transition: all 0.35s ease-in;
+    transform: scale(0.9);
+
+}
+.resumePage{
+    display: block;
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+.hidden{
+    .image-container{
+        opacity: 0;
+    }
+}
+body * {
+    user-select: none;
+}
+body {
+    background-image: url('bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+
+
+.titlebar {
+    color: white;
+    text-align: center;
+    position:relative;
+    flex-grow: 1;
+    transform: translate(0, -35%);
+    font-size: 15px;
+    transition: all 0.35s ease-in;
+    z-index: 15;
+}
+.titlebar:active{
+    background-color: transparent;
+}
+.titlebarResumeTab {
+    color: white;
+    text-align: center;
+    position:relative;
+    flex-grow: 1;
+    transform: translate(0, -35%);
+    font-size: 15px;
+    transition: all 0.35s ease-in;
+    z-index: 15;
+}
+.titlebarResumeTab:active{
+    background-color: transparent;
+}
+
+
+@keyframes closeAnimation {
+    from {
+        opacity: 1;
+        transform: translate(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+.closing {
+    animation: closeAnimation 0.5s forwards;
+}
+
+@keyframes openAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.opening {
+    animation: openAnimation 0.5s forwards;
+}
+
+
+
+@media only screen and (max-width: 10000px) {
+
+
+    .hidden {
+        margin-top: calc(90vh - 58px);
+        .titlebar{
+            display:inline;
+            color: white;
+            text-align: center;
+            position:relative;
+            flex-grow: 1;
+            transform: translate(0, -35%);
+            font-size: 15px;
+        }
+        .titlebarResumeTab{
+            display:inline;
+            color: white;
+            text-align: center;
+            position:relative;
+            flex-grow: 1;
+            transform: translate(0, -35%);
+            font-size: 15px;
+        }
+    }
+    
+    .hidden > .Buttons {
+        top: calc(90vh - 60px);
+        left: 60px
+    }
+
+    .Terminal > .Buttons {
+        left: 20px;
+        top: 10px;
+    }
+
+    .Terminal{
+        width: 60%;
+        height: 60%;
+        font-size: 0.8rem;
+    }
+    .ResumeTab > .Buttons {
+        left: 20px;
+        top: 10px;
+    }
+
+    .ResumeTab{
+        width: 60%;
+        height: 60%;
+        font-size: 0.8rem;
+    }
+    .hidden{
+        width: 15%;
+    }
+    
+    form {
+        margin-left: 25px;
+    }
+    .maxed{
+        margin: 0;
+        width: 95%;
+        height: 93%;
+        transition: all .35s ease-in;
+        font-size:1.01rem;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        .command{
+            margin-top: 0;
+            transition: all 0.35s ease-in;
+    
+        }
+    }
+    .maxed > .Buttons{
+        left: 20px;
+        top: 10px;
+    }
+    .Buttons {
+        position: absolute;
+        transition: all .35s ease-in;
+        display: flex;
+        
+    }
+    
+
+}
+
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes expandShrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.appMin {
+    animation: expandShrink 0.5s ease-in-out forwards;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out forwards;
+}
+
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loading img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

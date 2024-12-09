@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="terminal.png" type="image/png">
+    <title>Abdeltawab's Terminal</title>
+</head>
+
+<body onload="loadfun()">
+    <div id="loading"> <img src="https://i.imgur.com/FEDTpyE.gif" alt="Loading"></div>
+    <div class="button-container">
+        <button class="app" id="app" onclick="AppOpen()">
+            <img src="terminal.png" alt="Terminal" id="AppIcon">
+            <span class="term">Terminal</span>
+        </button>
+        <button class="app2" id="app2" onclick="AppOpenResumeTab()">
+            <img src="resume.png" alt="MyResume" id="AppIcon2">
+            <span class="resu">My Resume</span>
+        </button>
+        <button class="app3" id="app3" onclick="OpenStandardPortfolio()">
+            <img src="profile.png" alt="StandardPortfolio" id="AppIcon">
+            <span class="port">Standard<br>Portfolio</span>
+        </button>
+    </div>
+
+
+    <div id="Terminal" class="Terminal">
+        <br>
+        Hi, I am <span class="name">Abdeltawab</span><span class="name" id="element"></span><br><br>
+        I am a <span class="game">DevSecOps Engineer</span> 
+        <br>
+        
+        <p id="Content" class="Content">
+            <br>Type help for a list of commands.<br>
+        </p><br><span class='meh'>$ </span>
+        <form><input class="command" /></form><br>
+
+        <div class="Buttons" id="Buttons">
+            <button class="x titlebutton" onclick=closeT()></button>
+            <button class="Under titlebutton" onclick="Hide()"></button>
+            <button class="Maximize titlebutton" onclick="Maxim()"></button>
+            <span class="titlebar">Portfolio</span>
+        </div>
+    </div>
+
+
+
+    <div id="ResumeTab" class="ResumeTab">
+        <div class="image-container">
+            <img src="resumePage.jpg" alt="Image" class="resumePage"/>
+        </div>
+        <div class="Buttons ButtonsResumeTab" id="Buttons">
+            <button class="x titlebutton" onclick=closeResumeTab()></button>
+            <button class="Under titlebutton UnderR" onclick="HideResumeTab()"></button>
+            <span class="titlebarResumeTab">Resume.pdf</span>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Wagieh :)^3000', '^3000'],
+            typeSpeed: 45,
+            smartBackspace: true, // Default value
+            loop: true,
+        });
+    </script>
+    <script>on_load()</script>
+    <script>
+        var load = document.getElementById("loading");
+        function loadfun() {
+            load.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
