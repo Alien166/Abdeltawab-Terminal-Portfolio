@@ -27,4 +27,5 @@ To run this project locally using **VS Code**:
 
 Watch the demo video of the project below:
 
-[Click here to watch the video](./terminal.webm)
+[Click here to watch the video](https://www.linkedin.com/posts/abdeltawab-wagieh-825958226_webdevelopment-devsecops-portfolio-activity-7271963476649005056-n9bu?utm_source=share&utm_medium=member_desktop)
+
